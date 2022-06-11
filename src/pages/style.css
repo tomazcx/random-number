@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    @apply h-screen w-screen bg-gray-700 flex flex-col items-center justify-center
+}
+
+.title {
+    @apply text-white text-2xl font-bold mb-2;
+}
+
+input,
+.result {
+    @apply py-1.5 px-3 rounded-xl box-border bg-white text-center;
+}
+
+button {
+    @apply mt-8 bg-sky-600 px-8 py-1.5 rounded-xl border-2 border-sky-600 text-gray-900;
+    transition: all .2s ease;
+}
+
+button:hover {
+    @apply bg-transparent;
+}
