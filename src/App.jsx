@@ -1,7 +1,7 @@
 import './style.css'
-import dice from '../dice.svg'
-import { Calculate } from './Calculate'
-import { Result } from './Result'
+import dice from './dice.svg'
+import { Calculate } from './components/Calculate'
+import { Result } from './components/Result'
 import { useState } from 'react'
 
 
@@ -12,8 +12,14 @@ export const App = () => {
 
     const generateNum = () => {
         const diff = Math.abs(numbers[0] - numbers[1])
-        setRandomNumber(Math.round(Math.random() * diff))
-        setActive(0)
+        const num = Math.round(Math.random() * diff)
+        if(num <= numbers[0] || num>= numbers[1]){
+           return generateNum()
+        }else{
+            setRandomNumber(num)
+            return setActive(0)
+        }
+       
     }
 
     const againFun = () =>{
