@@ -52,7 +52,7 @@ export const App = () => {
             : <Result againFun={againFun} numbers={numbers} result={randomNumber} />}
             
             <p className={errorClass}>Invalid numbers</p>
-            <p className='mt-6 text-white {}'>Powered by <a href='https://github.com/tomazcx' target="_blank" className='hover:border-b border-solid'>tomazcx</a> </p>
+            <p className='mt-6 text-white'>Powered by <a href='https://github.com/tomazcx' target="_blank" className='hover:border-b border-solid'>tomazcx</a> </p>
         </main>
     )
 }
