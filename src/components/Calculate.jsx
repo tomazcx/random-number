@@ -10,7 +10,7 @@ export const Calculate = (props) => {
             <p className='text-white mx-8 text-center'>Insert two numbers to generate a random one between then.</p>
             <div className='flex flex-col gap-4 mt-8 items-center sm:flex-row'>
                 <input type="text" onChange={(input) => props.setNumbers([input.target.value, props.numbers[1]])}/>
-                <p className='text-white'>between</p>
+                <p className='text-white'>and</p>
                 <input type="text" onChange={(input) => {
                     props.setNumbers([props.numbers[0], input.target.value])
                 }}/>
