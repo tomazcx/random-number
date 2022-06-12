@@ -27,3 +27,11 @@ button {
 button:hover {
     @apply bg-transparent;
 }
+
+.showError {
+    @apply mt-4 text-red-600 block;
+}
+
+.hideError {
+    @apply hidden;
+}
